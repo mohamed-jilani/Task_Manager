@@ -6,6 +6,10 @@ public class Task {
     private String libelle;
     private String dateRealisation;
     private double prixHeure;
+    
+    private String type;
+    private String supervisor;
+    
 
     public Task(int id, String libelle, String dateRealisation, double prixHeure) {
         this.id = id;
@@ -44,5 +48,21 @@ public class Task {
 
     public void setPrixHeure(double prixHeure) {
         this.prixHeure = prixHeure;
+    }
+    
+    public String getType() {
+        return type;
+    }
+
+    public void setType(String type) {
+        this.type = type;
+    }
+
+    public String getSupervisor() {
+        return supervisor;
+    }
+
+    public void setSupervisor(String supervisor) {
+        this.supervisor = supervisor;
     }
 }
